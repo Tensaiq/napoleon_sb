@@ -1,0 +1,1040 @@
+@font-face {
+    font-family: "Gilroy";
+    src: url('./fonts/Gilroy-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url('./fonts/Gilroy-Medium.woff2') format('woff2');
+    font-weight: 500; /* Medium weight */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url('./fonts/Gilroy-Semibold.woff2') format('woff2');
+    font-weight: 600; /* Semibold weight */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url('./fonts/Gilroy-Bold.woff2') format('woff2');
+    font-weight: bold; /* Bold weight */
+    font-style: normal;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Gilroy", sans-serif;
+}
+
+
+
+.header {
+    position: relative; /* чтобы ::after позиционировался относительно хедера */
+    padding-top: 30px;
+     /* фон хедера */
+    z-index: 10;
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 100%;
+    height: 1px; /* толщина полоски */
+    background-color: white;
+    opacity: 0.3; /* прозрачность только полоски */
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+a {
+    color:#fff;
+    text-decoration: none;
+}
+
+h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+
+.container__header {
+    display: flex;
+   align-items: center;
+    justify-content: space-between;
+   
+}
+
+.header__link {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    color: white;
+    text-transform: uppercase;
+    transition: transform .2s;
+}
+
+.header__link:hover {
+    transform: scale(1.5);
+}
+
+.header__work {
+    display:flex;
+    gap: 40px;
+}
+
+.header__link__work {
+    display: flex;
+    gap: 25px;
+}
+
+
+.welcome {
+    position: relative;
+    z-index: 5;
+    box-sizing: border-box;
+    min-height: 100vh;
+ 
+
+    margin-top: -100px;
+    padding: 300px 0;
+    background-image: url('../tenis/image/back.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    
+}
+.container {
+}
+.welcome__title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 48px;
+    
+    color: white;
+    width: 600px;
+}
+.welcome__link {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+.welcome__link__desk {
+    width: 150px;
+}
+
+.welcome__wrapper {
+    position: absolute;
+    bottom: 24px; /* прижмёт к низу секции */
+    left: 0;
+    width: 100%;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    
+    
+}
+
+.welcome__card:hover {
+  transform: translateY(-10px);
+}
+
+.welcome__card {
+    width: 315px;
+    height: 151px;
+    background: #8D86C9;
+    z-index: 5;
+    transition: transform 0.3s ease;
+}
+.welcome__card__title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    color: white;
+    padding-top: 35px;
+    padding-left: 35px;
+}
+.welcome__card__desk {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+    color:  white;
+    padding-top: 17px;
+    position: relative;
+    padding-left: 35px;
+    
+}
+
+.welcome__card__desk::after{
+    content: "";
+    position: absolute;
+    bottom: 4px;
+    right: 12px;
+    background-image: url('../tenis/image/ci_external-link.png');
+    width: 30px;
+    height: 30px;
+    
+
+}
+
+.card {
+    margin-top: 150px;
+}
+
+.container__card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__wrapper {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #F7ECE1;
+    padding: 20px;
+    transition: box-shadow 0.3s;
+}
+
+.card__wrapper:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.img__card {
+    display: block;
+    width: 100%;
+    
+}
+
+
+
+.card__wrapper__text {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 27px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.sport {
+    padding-top: 150px;
+    padding-bottom: 150px;
+
+}
+.container {
+}
+.container__sport {
+    display: flex;
+    justify-content: center;
+}
+.left__block {
+    
+    padding-top: 70px;
+    margin-right: -80px; /* блок “заезжает” на правый */
+    z-index: 2; /* чтобы был поверх правого */
+}
+.block__right {
+    display: flex; /* делаем flex */
+    flex-direction: column; /* чтобы текст шёл вертикально */
+    
+    align-items: center; /* горизонтальное центрирование */
+    background-color: #F7ECE1;
+    width: 700px;
+    
+    
+    z-index: 1;
+    
+   
+}
+.block__title {
+    padding-top: 70px;
+    
+    
+   
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 140%;
+    color: black;
+}
+.block__desk {
+    padding-top: 20px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: black;
+    width: 500px;
+    
+
+}
+.block__wrapper {
+}
+.block__wraper__title {
+    align-items: center;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 140%;
+    color: black;
+    padding-top: 35px;
+    }
+.block__wrapper__card {
+    display: flex;
+    align-items: center;
+    
+    width: 500px;
+    
+}
+.img__block {
+    padding-top: 25px;
+    
+}
+.point__desk {
+    padding-top: 25px;
+    
+}
+
+.hou {
+    padding-bottom: 84px;
+}
+
+.people {
+}
+.container {
+}
+.people__top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel-window {
+    width: 100%;
+    padding-top: 75px;
+    overflow-x: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 8px;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.carousel-window::-webkit-scrollbar {
+    display: none;
+
+}
+.people__title {
+}
+.btn__people {
+    background-color: #8D86C9;
+    cursor: pointer;
+    border: none;
+    width: 45px;
+    height: 45px;
+    transition: box-shadow 0.3s;
+}
+
+.people__btn__wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.btn__people:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.people__card__wrapper {
+    
+    
+}
+.people__card {
+    flex: 0 0 240px;
+
+    
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+    text-align: center;
+    scroll-snap-align: center;
+    
+    
+    
+}
+.img__people {
+    display: block;
+    
+    
+}
+.people__card__title {
+    width: 85px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 140%;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    
+    color: black;
+    
+}
+.people__desk {
+    width: 240px;
+}
+
+.new {
+    margin-top: 150px;
+}
+.container {
+}
+.container__new {
+    display: flex;
+    justify-content: space-between;
+}
+.new__left {
+}
+.new__left__title {
+    margin-bottom: 75px;
+}
+.accordion {
+    margin-top: 30px;
+    
+}
+.new__btn {
+    padding: 15px 30px;
+    width: 526px;
+    height: 60px;
+    background-color: #8D86C9;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+
+}
+.acc-text {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 140%;
+    color:white;
+}
+.arrow {
+    transition: transform 0.2s;
+}
+
+.new__btn.active .arrow {
+    transform: rotate(-90deg);
+}
+
+.new__right {
+    margin-right: 75px;
+}
+.acc-content {
+    max-width: 505px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease;
+    background-color: #f8f8f8;
+    padding: 0 10px;
+}
+
+.acc-content.open {
+    max-height: 300px;
+    padding: 10px;
+}
+
+.new__wrapper {
+    margin-left: 75px;
+    position: relative;
+    display: inline-block;
+    border: 1px solid #F7ECE1;
+    padding: 20px;
+    margin-top: 75px;
+    flex: 0 0  auto;
+    
+    scroll-snap-align: center;
+    
+    
+    
+  
+}
+
+
+
+.new__card {
+    display: block;
+    width: 100%;
+    
+}
+
+
+
+.new__wrapper__text {
+    position: absolute;
+    bottom: 50px;
+    left: 140px;
+    transform: translateX(-50%);
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 27px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+
+
+.new__top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel__hack {
+    width: 100%;
+    
+    overflow-x: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.carousel__hack::-webkit-scrollbar {
+    display: none;
+
+}
+
+.footer {
+    background-color: #F7ECE1;
+    margin-top: 150px;
+}
+.container {
+}
+.container__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rule {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    color: #333333;
+    opacity: 0.3;
+}
+.footer__wrapper {
+    display: flex;
+    gap: 40px;
+}
+.che {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    color: #333333;
+    padding: 38px 0;
+    }
+.insst {
+    display: flex;
+    gap: 19px;
+}
+
+.welcome__news {
+    position: relative;
+    z-index: 5;
+    box-sizing: border-box;
+   
+  
+
+    margin-top: -100px;
+    padding: 200px 0;
+    background-image: url('../tenis/image/setka.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100vh;
+    
+}
+.container {
+}
+.welcome__news__title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 140%;
+    text-align: center;
+    color:white;
+}
+
+.osnova {
+    padding-top: 80px;
+}
+.container {
+}
+.container__osnova {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+}
+.osnova__card {
+    border: 1px solid #F7ECE1;
+    width: 335px;
+    padding: 30px 40px;
+    background: white;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.osnova__card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(141, 134, 201, 0.15);
+    border-color: #8D86C9;
+    background: #faf9ff;
+}
+.osnova__card img {
+    width: 100%;
+    height: 200px; /* Фиксируем высоту для одинаковых карточек */
+    object-fit: cover;
+    border-radius: 4px;
+    transition: all 0.5s ease;
+    filter: brightness(0.95);
+}
+
+.osnova__card:hover img {
+    filter: brightness(1.1);
+    transform: scale(1.03);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.osnova__date {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #333333;
+    opacity: 0.3;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    padding: 4px 12px;
+    background: rgba(141, 134, 201, 0.05);
+    border-radius: 12px;
+}
+
+.osnova__card:hover .osnova__date {
+    opacity: 0.8;
+    color: #8D86C9;
+    background: rgba(141, 134, 201, 0.1);
+    transform: translateY(-2px);
+}
+.osnava__title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 140%;
+    color: #333333;
+    width: 333px;
+    margin-bottom: 20px;
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.osnova__card:hover .osnava__title {
+    color: #8D86C9;
+    transform: translateX(5px);
+}
+
+/* Подчеркивание при наведении */
+.osnova__card:hover .osnava__title::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(to right, #8D86C9, #A5A1D6);
+    border-radius: 2px;
+}
+
+.osnova__bt {
+    padding: 10px 20px;
+    width: 137px;
+    height: 45px;
+    background: #8D86C9;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(0);
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* Эффект наложения фона */
+.osnova__bt::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, 
+        rgba(255, 255, 255, 0.1) 0%,
+        rgba(255, 255, 255, 0.3) 50%,
+        rgba(255, 255, 255, 0.1) 100%);
+    transition: left 0.6s ease;
+    z-index: -1;
+}
+
+.osnova__bt:hover::before {
+    left: 100%;
+}
+
+/* Основные состояния кнопки */
+.osnova__bt:hover {
+    background: transparent;
+    color: #8D86C9;
+    box-shadow: 
+        inset 0 0 0 2px #8D86C9,
+        0 5px 15px rgba(141, 134, 201, 0.3);
+    transform: translateY(-3px);
+}
+
+/* Иконка стрелки при наведении */
+.osnova__bt::after {
+    
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.osnova__card:hover .osnova__bt::after {
+    opacity: 1;
+    transform: translateX(5px);
+    margin-left: 8px;
+}
+
+
+.welcome__about {
+    position: relative;
+    z-index: 5;
+    box-sizing: border-box;
+   
+  
+
+    margin-top: -100px;
+    padding: 200px 0;
+    background-image: url('../tenis/image/pidor.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100vh;
+    background-position: -800px 0;
+}
+.container {
+}
+.welcome__about__title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 140%;
+    text-align: center;
+    color: white;
+}
+
+.about {
+    margin-top: 80px;
+}
+.container {
+}
+.about__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.people__title {
+}
+.people__btn__wrapper {
+}
+.btn__people {
+}
+.carousel__hack {
+
+}
+
+.hack__about {
+    
+}
+
+.about__card {
+    height: 450px;
+
+    
+}
+.btn__about {
+    position: absolute;
+    bottom: 50px;
+    left: 140px;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    width: 145px;
+    height: 45px;
+    background: #8D86C9;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+.new__pidor {
+    width: 90%;
+    
+    
+    
+  
+}
+
+.photo {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+.container {
+}
+.photo__title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 140%;
+    color: #333333;
+}
+.left__block__photo {
+}
+.block__right__photo {
+}
+.block__right__photo__title {
+    padding-top: 70px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 140%;
+    color: #333333;
+    width: 530px;
+
+}
+.block__right__photo__desk__1 {
+    margin-top: 40px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #333333;
+    width: 650px;
+}
+.block__right__photo__desk__2 {
+    margin-top: 15px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #333333;
+    width: 650px;
+}
+.block__right__photo__desk__3 {
+    margin-top: 15px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #333333;
+    width: 650px;
+}
+.block__right__photo__wrapper {
+    display: flex;
+    margin-top: 58px;
+    gap: 36px;
+   
+}
+.block__right__photo__card {
+    display: flex;
+    align-items: center;
+    
+}
+.block__right__photo__card__text {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 140%;
+    color: #333333;
+    
+}
+
+.left__block__photo {
+    
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin-right: -65px; /* блок “заезжает” на правый */
+    z-index: 2; /* чтобы был поверх правого */
+}
+.block__right__photo {
+    display: flex; /* делаем flex */
+    flex-direction: column; /* чтобы текст шёл вертикально */
+    
+    align-items: center; /* горизонтальное центрирование */
+    background-color: #F7ECE1;
+    width: 850px;
+    
+    
+    z-index: 1;
+}
+
+.container__photo {
+    display: flex;
+}
+
+.pidoras {
+    margin-right: 17px;
+}
+
+.container__rules {
+    display: flex;
+    height: 1086px;
+    
+}
+
+.rules {
+  
+
+  
+  gap: 40px;
+}
+
+.rules__nav {
+  display: flex;
+  flex-direction: column;
+ 
+  gap: 12px;
+}
+
+.rules__tab {
+    text-align: left;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 140%;
+    color: #333333;
+    width: 330px;
+    transition: margin-left 0.3s ease;
+    margin-bottom: 40px;
+  
+}
+
+.rules__tab.active {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 140%;
+    color: #8D86C9;
+    margin-left: 15px;
+}
+.rules__content {
+  position: relative;
+  width: 886px;
+  margin-left: 120px;
+}
+
+.rules__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+}
+
+.rules__item.active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.rules__title{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 140%;
+    color: #333333;
+    margin-bottom: 80px;
+}
+
+.rulees__title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    color: #333333
+}
+
+.palka {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #333333;
+    margin-left: 30px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.palka::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 3px;
+    left: -30px;
+    top: 8px;
+    background-color: #8D86C9;
+    
+}
+
+.palka__end {
+    margin-bottom: 40px;
+}

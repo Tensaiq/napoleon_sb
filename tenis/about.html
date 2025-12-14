@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container container__header">
+            <img src="./image/Logo.png" alt="" class="header__logo">
+            <div class="header__work">
+                <a href="./index.html" class="header__link">Главная</a>
+                <a href="#!" class="header__link">О клубе</a>
+                <a href="./news.html" class="header__link">Новости</a>
+                <a href="#!" class="header__link">Услуги</a>
+                <a href="#!" class="header__link">Детский теннис</a>
+                <a href="#!" class="header__link">Галерея</a>
+                <a href="#!" class="header__link">Цены</a>
+                <a href="#!" class="header__link">Контакты</a>
+            </div>
+            <div class="header__link__work">
+                <a href="#!" class="haeder__kink__img"><img src="./image/soc-icons.svg" alt=""></a>
+                <a href="#!" class="haeder__kink__img"><img src="./image/vk.svg" alt=""></a>
+
+
+            </div>
+            
+        </div>
+    </header>
+    <main>
+        <section class="welcome__about">
+            <div class="container">
+                <div class="welcome__about__title">
+                    O Клубе
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="container">
+                <div class="about__top">
+                     <h1 class="people__title">Фото кортов</h1>
+                        <div class="people__btn__wrapper">
+                            <button class="btn__people " onclick="carousellMove(false)"><img src="./image/vector.svg" alt=""></button>
+                            <button class="btn__people " onclick="carousellMove()"><img src="./image/vector__right.png" alt=""></button>
+                        </div>
+                </div>
+                <div class="carousel__hack hack__about">
+                        <div class="new__wrapper new__pidor">
+                            <img src="./image/huesos.png" alt="" class="new__card about__card">
+                            <button class="btn__about">Летний корт</button>
+                        </div>
+                        <div class="new__wrapper new__pidor">
+                            <img src="./image/R.jpg" alt="" class="new__card about__card">
+                            <button class="btn__about">Летний корт</button>
+                        </div>
+                        <div class="new__wrapper new__pidor">
+                            <img src="./image/Island-Padel-Facility-2-16-9.jpeg" alt="" class="new__card about__card">
+                            <button class="btn__about">Летний корт</button>
+                        </div>
+            </div>
+        </section>
+        <section class="photo">
+            <div class="container">
+                <div class="photo__title">О клубе</div>
+                <div class="container__photo">
+                        <div class="left__block__photo">
+                        <img src="./image/photow.png" alt="">
+                    </div>
+                    <div class="block__right__photo">
+                        <div class="block__right__photo__title">Петербургский теннисный клуб имени М.А. Пасечникова</div>
+                        <div class="block__right__photo__desk__1">Feugiat gravida proin arcu tellus ipsum posuere nisl, consectetur scelerisque. Posuere ipsum tellus dignissim etiam lorem ultrices risus viverra. Purus volutpat phasellus viverra vestibulum quis. Gravida pretium odio enim ut id tempus semper. Urna cum at in iaculis mauris at. Tellus, a euismod tincidunt eu orci faucibus. Mi faucibus pellentesque molestie nunc, et, tellus. Neque cras mattis dolor id. Maecenas vivamus tristique donec neque id convallis. Feugiat fusce at est at.</div>
+                        <div class="block__right__photo__desk__2">Vitae nec eget blandit id nisl. Sit ac dictum lorem mauris posuere sit. Gravida commodo egestas pharetra, mi interdum. Ullamcorper pulvinar hac risus egestas fusce nunc. Vel auctor proin integer ut lacus, sed neque id dictum. At enim quis eu, mattis aliquet varius in eu venenatis.</div>
+                        <div class="block__right__photo__desk__3">Quisque diam elit donec orci sed dolor. Neque sed sit tortor eget urna magna interdum feugiat ut. In purus rhoncus egestas euismod morbi. Ut velit facilisi in cras tempus turpis sapien ipsum, mattis. Tempor sit nulla ac lorem placerat congue. Nulla purus vestibulum suscipit pellentesque risus non.</div>
+
+                        <div class="block__right__photo__wrapper">
+                            <div class="block__right__photo__card">
+                                <img src="./image/7.png" alt="" class="pidoras">
+                                <p class="block__right__photo__card__text">Летних грунтовых<br> кортов</p>
+                            </div>
+                            <div class="block__right__photo__card">
+                                <img src="./image/4.png" alt="" class="pidoras">
+                                <p class="block__right__photo__card__text">Зимних корта с покрытием<br> «искусственная трава»</p>
+                            </div>
+                            <div class="block__right__photo__card">
+                                <img src="./image/3.png" alt="" class="pidoras">
+                                <p class="block__right__photo__card__text">Зимних корта с <br> покрытием «hard»</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <section class="rules">
+            <div class="container ">
+
+            <h1 class="rules__title">Правила</h1>
+            <div class="container__rules">
+                <div class="rules__nav">
+                    
+                    <button class="rules__tab active" data-tab="1">1. Общие положения</button>
+                    <button class="rules__tab" data-tab="2">2. Основные определения</button>
+                    <button class="rules__tab" data-tab="3">3. Порядок предоставления игрового времени на кортах</button>
+                    <button class="rules__tab" data-tab="4">4. Оплата услуг</button>
+                    <button class="rules__tab" data-tab="5">5. Правила поведения на территории и кортах</button>
+                    <button class="rules__tab" data-tab="6">6. Прочие положения</button>
+                </div>
+
+                <div class="rules__content">
+                    <div class="rules__item active" data-content="1">
+                    <h3 class="rulees__title">1.1. ТК предоставляет Членам клуба:</h3>
+                    <p class="palka">Разовое посещение;</p>
+                    <p class="palka">Абонементы на 30 и 50 часов;</p>
+                    <p class="palka">Индивидуальные занятия с тренером;</p>
+                    <p class="palka">Детские группы разных возрастов и уровня подготовки;</p>
+                    <p class="palka palka__end">Взрослые группы.</p>
+
+                    <h3 class="rulees__title">1.2. Минимальное время:</h3>
+                    <p class="palka">Разового посещения — 60 минут;</p>
+                    <p class="palka">Разового посещения на летних кортах — 55 минут;</p>
+                    <p class="palka">Абонемента — 30 часов;</p>
+                    <p class="palka">Индивидуальное занятие с тренером — 1 час;</p>
+                    <p class="palka palka__end">Занятия с тренером в группах (детских/взрослых) — согласно действующего расписания групп.</p>
+                    
+                    <h3 class="rulees__title">1.3. Игровое время на основании заявок (брони)</h3>
+                    <p>ТК предоставляет игровое время на основании заявок (брони) Членов клуба с учетом расписания работы корта, проведения соревнований, клубных мероприятий, производства ремонтно-профилактических работ. Бронирование игрового времени осуществляется через администратора ТК. Бронирование может производиться непосредственно в Комплексе, либо по телефону. 3.4 ТК не несет ответственности за сохранение расписания игрового времени за Членом клуба после окончания срока действия абонемента, а также в случае нарушения срока оплаты услуг. 3.5 Абонемент имеют право приобретать только Члены ТК. Приобретение абонементов тренерами запрещено. 3.6. Отмена игрового времени может производится не позднее 24 часов до начала занятия и отыгрываться в течение сезона на равноценном времени, либо, при желании, на более дорогом, с доплатой. Не отмененное вовремя занятие считается состоявшимся и оплачивается по текущему тарифу. 3.7. При проведении соревнований, Клубных мероприятиях, технических неисправностях, не позволяющих эксплуатацию кортов, ТК имеет право производить изменения в расписании. При этом ТК обязуется заблаговременно уведомить Члена клуба по телефону об изменении в расписании, а также предоставить возможность равнозначно компенсировать пропущенное игровое время в удобное для Члена клуба время с учетом занятости кортов. 3.8. Компенсация (обоюдно согласованное равноценное игровое время) для занятий в ТК предоставляется также в случаях:</p>
+
+                    <p class="palka">когда Член клуба заблаговременно (не менее суток) известил администратора ТК о невозможности посещения занятия;</p>
+                    <p class="palka">неблагоприятных погодных условий для игры на открытых кортах, и невозможности предоставления закрытой площадки;</p>
+                    
+                    
+                    </div>
+                    
+                    <div class="rules__item" data-content="2">
+                    <h3 class="rulees__title">2.1. ТК предоставляет Членам клуба:</h3>
+                    <p class="palka">Разовое посещение;</p>
+                    <p class="palka">Абонементы на 30 и 50 часов;</p>
+                    <p class="palka">Индивидуальные занятия с тренером;</p>
+                    <p class="palka">Детские группы разных возрастов и уровня подготовки;</p>
+                    <p class="palka palka__end">Взрослые группы.</p>
+
+                    <h3 class="rulees__title">2.2. Минимальное время:</h3>
+                    <p class="palka">Разового посещения — 60 минут;</p>
+                    <p class="palka">Разового посещения на летних кортах — 55 минут;</p>
+                    <p class="palka">Абонемента — 30 часов;</p>
+                    <p class="palka">Индивидуальное занятие с тренером — 1 час;</p>
+                    <p class="palka palka__end">Занятия с тренером в группах (детских/взрослых) — согласно действующего расписания групп.</p>
+                    
+                    <h3 class="rulees__title">2.3. Игровое время на основании заявок (брони)</h3>
+                    <p>ТК предоставляет игровое время на основании заявок (брони) Членов клуба с учетом расписания работы корта, проведения соревнований, клубных мероприятий, производства ремонтно-профилактических работ. Бронирование игрового времени осуществляется через администратора ТК. Бронирование может производиться непосредственно в Комплексе, либо по телефону. 3.4 ТК не несет ответственности за сохранение расписания игрового времени за Членом клуба после окончания срока действия абонемента, а также в случае нарушения срока оплаты услуг. 3.5 Абонемент имеют право приобретать только Члены ТК. Приобретение абонементов тренерами запрещено. 3.6. Отмена игрового времени может производится не позднее 24 часов до начала занятия и отыгрываться в течение сезона на равноценном времени, либо, при желании, на более дорогом, с доплатой. Не отмененное вовремя занятие считается состоявшимся и оплачивается по текущему тарифу. 3.7. При проведении соревнований, Клубных мероприятиях, технических неисправностях, не позволяющих эксплуатацию кортов, ТК имеет право производить изменения в расписании. При этом ТК обязуется заблаговременно уведомить Члена клуба по телефону об изменении в расписании, а также предоставить возможность равнозначно компенсировать пропущенное игровое время в удобное для Члена клуба время с учетом занятости кортов. 3.8. Компенсация (обоюдно согласованное равноценное игровое время) для занятий в ТК предоставляется также в случаях:</p>
+
+                    <p class="palka">когда Член клуба заблаговременно (не менее суток) известил администратора ТК о невозможности посещения занятия;</p>
+                    <p class="palka">неблагоприятных погодных условий для игры на открытых кортах, и невозможности предоставления закрытой площадки;</p>
+                    
+                    </div>
+
+                    <div class="rules__item" data-content="3">
+                    <h3 class="rulees__title">3.1. ТК предоставляет Членам клуба:</h3>
+                    <p class="palka">Разовое посещение;</p>
+                    <p class="palka">Абонементы на 30 и 50 часов;</p>
+                    <p class="palka">Индивидуальные занятия с тренером;</p>
+                    <p class="palka">Детские группы разных возрастов и уровня подготовки;</p>
+                    <p class="palka palka__end">Взрослые группы.</p>
+
+                    <h3 class="rulees__title">3.2. Минимальное время:</h3>
+                    <p class="palka">Разового посещения — 60 минут;</p>
+                    <p class="palka">Разового посещения на летних кортах — 55 минут;</p>
+                    <p class="palka">Абонемента — 30 часов;</p>
+                    <p class="palka">Индивидуальное занятие с тренером — 1 час;</p>
+                    <p class="palka palka__end">Занятия с тренером в группах (детских/взрослых) — согласно действующего расписания групп.</p>
+                    
+                    <h3 class="rulees__title">3.3. Игровое время на основании заявок (брони)</h3>
+                    <p>ТК предоставляет игровое время на основании заявок (брони) Членов клуба с учетом расписания работы корта, проведения соревнований, клубных мероприятий, производства ремонтно-профилактических работ. Бронирование игрового времени осуществляется через администратора ТК. Бронирование может производиться непосредственно в Комплексе, либо по телефону. 3.4 ТК не несет ответственности за сохранение расписания игрового времени за Членом клуба после окончания срока действия абонемента, а также в случае нарушения срока оплаты услуг. 3.5 Абонемент имеют право приобретать только Члены ТК. Приобретение абонементов тренерами запрещено. 3.6. Отмена игрового времени может производится не позднее 24 часов до начала занятия и отыгрываться в течение сезона на равноценном времени, либо, при желании, на более дорогом, с доплатой. Не отмененное вовремя занятие считается состоявшимся и оплачивается по текущему тарифу. 3.7. При проведении соревнований, Клубных мероприятиях, технических неисправностях, не позволяющих эксплуатацию кортов, ТК имеет право производить изменения в расписании. При этом ТК обязуется заблаговременно уведомить Члена клуба по телефону об изменении в расписании, а также предоставить возможность равнозначно компенсировать пропущенное игровое время в удобное для Члена клуба время с учетом занятости кортов. 3.8. Компенсация (обоюдно согласованное равноценное игровое время) для занятий в ТК предоставляется также в случаях:</p>
+
+                    <p class="palka">когда Член клуба заблаговременно (не менее суток) известил администратора ТК о невозможности посещения занятия;</p>
+                    <p class="palka">неблагоприятных погодных условий для игры на открытых кортах, и невозможности предоставления закрытой площадки;</p>
+                    
+
+
+
+
+                    </div>
+                    <div class="rules__item" data-content="4">
+                    <h3>4. Оплата услуг</h3>
+                    <p>Финальный босс правил.</p>
+                    </div>
+                    <div class="rules__item" data-content="5">
+                    <h3>5. Правила поведения на территории и кортах</h3>
+                    <p>Финальный босс правил.</p>
+                    </div>
+                    <div class="rules__item" data-content="6">
+                    <h3>6. Прочие положения</h3>
+                    <p>Финальный босс правил.</p>
+                    </div>
+                </div>
+            </div>
+
+                
+            </div>
+            </section>
+    </main>
+    
+    
+    
+    <script src="main.js"></script>
+    <footer class="footer">
+        <div class="container container__footer">
+            <div class="rule">2022 © Все права защищены.</div>
+            <div class="footer__wrapper">
+                <a href="./index.html" class="che">Главная</a>
+                <a href="#!" class="che">О клубе</a>
+                <a href="#!" class="che">Турниры</a>
+                <a href="#!" class="che">Цены</a>
+                <a href="#!" class="che">Услуги</a>
+                <a href="#!" class="che">Детский теннис</a>
+                <a href="#!" class="che">Галерея</a>
+                <a href="#!" class="che">Контакты</a>
+            </div>
+            <footer class="insst">
+                <a href="#!"><img src="./image/footer_1.svg" alt=""></a>
+                <a href="#!"><img src="./image/footer_2.svg" alt=""></a>
+                <a href="#!"><img src="./image/footer_3.svg" alt=""></a>
+            </footer>
+        </div>
+    </footer>
+    
+</body>
+</html>
